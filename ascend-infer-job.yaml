@@ -1,0 +1,269 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: ascend-infer-job
+spec:
+  template:
+    metadata:
+      labels:
+        app: ascend-infer-job
+    spec:
+      nodeName: atlas1
+      hostNetwork: true  # 相当于 --network host
+      hostPID: true  # 相当于 --pid=host
+      securityContext:
+        runAsUser: 1000
+        runAsGroup: 1000
+      containers:
+      - name: ascend-infer
+        image: ascend-infer:0411
+        imagePullPolicy: Never
+        # command: ["/bin/bash", "-c", "sleep infinity"]  # 无限睡眠
+        securityContext:
+          privileged: true  # 可能需要特权模式来访问设备
+        volumeMounts:
+        - name: video-data
+          mountPath: /home/AscendWork/video-data/
+        - name: sys-version
+          mountPath: /etc/sys_version.conf
+          readOnly: true
+        - name: hdc-basic
+          mountPath: /etc/hdcBasic.cfg
+          readOnly: true
+        - name: libaicpu-processer
+          mountPath: /usr/lib64/libaicpu_processer.so
+          readOnly: true
+        - name: libaicpu-prof
+          mountPath: /usr/lib64/libaicpu_prof.so
+          readOnly: true
+        - name: libaicpu-sharder
+          mountPath: /usr/lib64/libaicpu_sharder.so
+          readOnly: true
+        - name: libadump
+          mountPath: /usr/lib64/libadump.so
+          readOnly: true
+        - name: libtsd-eventclient
+          mountPath: /usr/lib64/libtsd_eventclient.so
+          readOnly: true
+        - name: libaicpu-scheduler
+          mountPath: /usr/lib64/libaicpu_scheduler.so
+          readOnly: true
+        - name: libcrypto
+          mountPath: /usr/lib64/libcrypto.so.1.1
+          readOnly: true
+        - name: libyaml
+          mountPath: /usr/lib64/libyaml-0.so.2
+          readOnly: true
+        - name: libdcmi
+          mountPath: /usr/lib64/libdcmi.so
+          readOnly: true
+        - name: libmpi-dvpp-adapter
+          mountPath: /usr/lib64/libmpi_dvpp_adapter.so
+          readOnly: true
+        - name: aicpu-kernels
+          mountPath: /usr/lib64/aicpu_kernels/
+          readOnly: true
+        - name: npu-smi
+          mountPath: /usr/local/sbin/npu-smi
+          readOnly: true
+        - name: libstackcore
+          mountPath: /usr/lib64/libstackcore.so
+          readOnly: true
+        - name: libunified-timer
+          mountPath: /usr/lib64/libunified_timer.so
+        - name: libdp
+          mountPath: /usr/lib64/libdp.so
+        - name: libtensorflow
+          mountPath: /usr/lib64/libtensorflow.so
+        - name: ascend-driver-lib64
+          mountPath: /usr/local/Ascend/driver/lib64
+          readOnly: true
+        - name: slogd
+          mountPath: /var/slogd
+          readOnly: true
+        - name: dmp-daemon
+          mountPath: /var/dmp_daemon
+          readOnly: true
+# 从这里分开挂载-----------------------------------
+        - name: upgrade
+          mountPath: /dev/upgrade
+        - name: davinci0
+          mountPath: /dev/devinci0
+        - name: davinci-manager
+          mountPath: /dev/davinci_manager
+        - name: vdec
+          mountPath: /dev/vdec
+        - name: vpc
+          mountPath: /dev/vpc
+        - name: pngd
+          mountPath: /dev/pngd
+        - name: venc
+          mountPath: /dev/venc
+        - name: sys
+          mountPath: /dev/sys
+        - name: svm0
+          mountPath: /dev/svm0
+        - name: acodec
+          mountPath: /dev/acodec
+        - name: ai
+          mountPath: /dev/ai
+        - name: ao
+          mountPath: /dev/ao
+        - name: hdmi
+          mountPath: /dev/hdmi
+        - name: ts-aisle
+          mountPath: /dev/ts_aisle
+        - name: dvpp-cmdlist
+          mountPath: /dev/dvpp_cmdlist
+      volumes:
+      - name: video-data
+        hostPath:
+          path: /root/workdir/data/
+          type: Directory  # 目录
+      - name: sys-version
+        hostPath:
+          path: /etc/sys_version.conf
+          type: File  # 明确指定为文件类型
+      - name: hdc-basic
+        hostPath:
+          path: /etc/hdcBasic.cfg
+          type: File
+      - name: libaicpu-processer
+        hostPath:
+          path: /usr/lib64/libaicpu_processer.so
+          type: File
+      - name: libaicpu-prof
+        hostPath:
+          path: /usr/lib64/libaicpu_prof.so
+          type: File
+      - name: libaicpu-sharder
+        hostPath:
+          path: /usr/lib64/libaicpu_sharder.so
+          type: File
+      - name: libadump
+        hostPath:
+          path: /usr/lib64/libadump.so
+          type: File
+      - name: libtsd-eventclient
+        hostPath:
+          path: /usr/lib64/libtsd_eventclient.so
+          type: File
+      - name: libaicpu-scheduler
+        hostPath:
+          path: /usr/lib64/libaicpu_scheduler.so
+          type: File
+      - name: libcrypto
+        hostPath:
+          path: /usr/lib/aarch64-linux-gnu/libcrypto.so.1.1
+          type: File
+      - name: libyaml
+        hostPath:
+          path: /usr/lib/aarch64-linux-gnu/libyaml-0.so.2.0.6
+          type: File
+      - name: libdcmi
+        hostPath:
+          path: /usr/lib64/libdcmi.so
+          type: File
+      - name: libmpi-dvpp-adapter
+        hostPath:
+          path: /usr/lib64/libmpi_dvpp_adapter.so
+          type: File
+      - name: aicpu-kernels
+        hostPath:
+          path: /usr/lib64/aicpu_kernels/
+          type: Directory  # 指定为目录类型
+      - name: npu-smi
+        hostPath:
+          path: /usr/local/sbin/npu-smi
+          type: File
+      - name: libstackcore
+        hostPath:
+          path: /usr/lib64/libstackcore.so
+          type: File
+      - name: libunified-timer
+        hostPath:
+          path: /usr/lib64/libunified_timer.so
+          type: Directory
+      - name: libdp
+        hostPath:
+          path: /usr/lib64/libdp.so
+          type: File
+      - name: libtensorflow
+        hostPath:
+          path: /usr/lib64/libtensorflow.so
+          type: File
+      - name: ascend-driver-lib64
+        hostPath:
+          path: /usr/local/Ascend/driver/lib64
+          type: Directory
+      - name: slogd
+        hostPath:
+          path: /var/slogd
+          type: File
+      - name: dmp-daemon
+        hostPath:
+          path: /var/dmp_daemon
+          type: File
+# 从这里分开挂载--------------------------
+      - name: upgrade
+        hostPath:
+          path: /dev/upgrade
+          type: CharDevice  # 指定为字符设备
+      - name: davinci0
+        hostPath:
+          path: /dev/davinci0
+          type: CharDevice
+      - name: davinci-manager
+        hostPath:
+          path: /dev/davinci_manager_docker  # 注意源路径不同
+          type: CharDevice
+      - name: vdec
+        hostPath:
+          path: /dev/vdec
+          type: CharDevice
+      - name: vpc
+        hostPath:
+          path: /dev/vpc
+          type: CharDevice
+      - name: pngd
+        hostPath:
+          path: /dev/pngd
+          type: CharDevice
+      - name: venc
+        hostPath:
+          path: /dev/venc
+          type: CharDevice
+      - name: sys
+        hostPath:
+          path: /dev/sys
+          type: CharDevice
+      - name: svm0
+        hostPath:
+          path: /dev/svm0
+          type: CharDevice
+      - name: acodec
+        hostPath:
+          path: /dev/acodec
+          type: CharDevice
+      - name: ai
+        hostPath:
+          path: /dev/ai
+          type: CharDevice
+      - name: ao
+        hostPath:
+          path: /dev/ao
+          type: CharDevice
+      - name: hdmi
+        hostPath:
+          path: /dev/hdmi
+          type: CharDevice
+      - name: ts-aisle
+        hostPath:
+          path: /dev/ts_aisle
+          type: CharDevice
+      - name: dvpp-cmdlist
+        hostPath:
+          path: /dev/dvpp_cmdlist
+          type: CharDevice
+      restartPolicy: Never  # Job 必须设置为 Never 或 OnFailure
+
