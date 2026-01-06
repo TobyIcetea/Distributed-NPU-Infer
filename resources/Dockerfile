@@ -9,6 +9,10 @@ FROM ubuntu:22.04 AS python-installer
 # Python Environment variables
 ENV PATH=/usr/local/python3.10.17/bin:${PATH}
 
+RUN sed -i 's/archive.ubuntu.com/mirrors.aliyun.com/g' /etc/apt/sources.list \
+    && sed -i 's/security.ubuntu.com/mirrors.aliyun.com/g' /etc/apt/sources.list \
+    && pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
 RUN apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
         apt-transport-https \
@@ -31,6 +35,12 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /var/tmp/* \
     && rm -rf /tmp/*
+
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libgl1 \
+    libglib2.0-0 \
+    && rm -rf /var/lib/apt/lists/*
 
 # Install Python
 RUN curl -fsSL https://repo.huaweicloud.com/python/3.10.17/Python-3.10.17.tgz -o /tmp/Python-3.10.17.tgz && \
@@ -104,6 +114,26 @@ RUN . /usr/local/Ascend/ascend-toolkit/set_env.sh && \
     chmod +x ~/Ascend-cann-nnal.run && \
     ~/Ascend-cann-nnal.run --quiet --install --install-for-all && \
     rm -f ~/Ascend-cann-nnal.run
+
+# 安装 ACLRuntime 和其他所需的库
+COPY aclruntime-0.0.2-cp310-cp310-linux_x86_64.whl .
+COPY ais_bench-0.0.2-py3-none-any.whl .
+
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir cython && \
+    pip install --no-cache-dir \
+    onnx==1.17 \
+    onnxruntime-cann==1.20 \
+    tqdm \
+    opencv-python==4.11.0.86 \
+    pillow==9.1.0 \
+    tensorboard==1.15.0 \
+    matplotlib \
+    fvcore \
+    pycocotools && \
+    pip install --no-cache-dir \
+    aclruntime-0.0.2-cp310-cp310-linux_x86_64.whl \
+    ais_bench-0.0.2-py3-none-any.whl
 
 # Stage 3: Copy results from previous stages
 FROM ubuntu:22.04 AS official-ubuntu
