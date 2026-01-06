@@ -151,7 +151,7 @@ bash run.sh
 ├── run.sh
 ├── segments
 └── split-video.py
-`
+```
 
 执行 `run.sh` 之后的项目目录树：
 

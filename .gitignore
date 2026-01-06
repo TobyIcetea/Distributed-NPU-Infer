@@ -12,11 +12,9 @@ Thumbs.db
 .vscode/
 
 # Project specific
+full-videos/
 segments/
 *.mp4
 *.avi
 *.mkv
 npu-levels.json
-# 这些是运行时的输入输出目录，通常忽略
-full-videos/
-segments/
