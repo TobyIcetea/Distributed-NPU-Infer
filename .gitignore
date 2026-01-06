@@ -18,5 +18,5 @@ segments/
 *.mkv
 npu-levels.json
 # 这些是运行时的输入输出目录，通常忽略
-input-file/
-output-file/
+full-videos/
+segments/
