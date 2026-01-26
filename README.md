@@ -57,7 +57,7 @@ Omni-Infer-Ascend 是一个基于昇腾（Ascend）NPU 的推理项目集合，�
 
 ### bench_02_efficient_net
 
-![efficientnet-infer](./bench_02_efficientnet/vis_results/warmup_vis_batch_1.png)
+![efficientnet-infer](./bench_02_efficient_net/vis_results/warmup_vis_batch_1.png)
 
 ### bench_03_vit
 
