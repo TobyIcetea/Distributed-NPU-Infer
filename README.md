@@ -8,11 +8,11 @@ Omni-Infer-Ascend 是一个基于昇腾（Ascend）NPU 的推理项目集合，�
 
 | 项目名称 | 项目介绍 | 设备 |
 | -------- | -------- | ---- |
-| Distributed-NPU-Inference | 分布式 yolov5 推理项目 | 310B * N |
-| bench_01_resnet | ResNet 模型推理项目 | 310P |
-| bench_02_efficientnet | EfficientNet 模型推理项目 | 310P |
-| bench_03_vit | ViT 模型推理项目 | 310P |
-| bench_04_swin_transformer | Swin Transformer 模型推理项目 | 310P |
+| [Distributed-NPU-Inference](./Distributed-NPU-Inference) | 分布式 yolov5 推理项目 | 310B * N |
+| [bench_01_resnet](./bench_01_resnet) | ResNet 模型推理项目 | 310P |
+| [bench_02_efficientnet](./bench_02_efficientnet) | EfficientNet 模型推理项目 | 310P |
+| [bench_03_vit](./bench_03_vit) | ViT 模型推理项目 | 310P |
+| [bench_04_swin_transformer](./bench_04_swin_transformer) | Swin Transformer 模型推理项目 | 310P |
 
 ## 项目设备
 
