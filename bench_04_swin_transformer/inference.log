@@ -1,0 +1,34 @@
+2025-12-10 10:46:55,903 - INFO - 数据集加载成功: 3923 张图片, 61 个batch
+2025-12-10 10:46:55,903 - INFO - 类别总数: 1000
+2025-12-10 10:46:57,264 - INFO - ONNX 模型加载成功: /ascend-models/bench_04_swin_transformer/swin_base_patch4_window7_224.onnx
+2025-12-10 10:46:57,264 - INFO - 输入名称: input, 形状: [64, 3, 224, 224], 类型: tensor(float)
+2025-12-10 10:46:57,264 - INFO - 输出名称: output, 形状: [64, 1000], 类型: tensor(float)
+2025-12-10 10:46:57,264 - INFO - 开始 ONNX 推理...
+2025-12-10 10:46:57,363 - INFO - 开始预热，共 5 个 Batch。前 3 个 Batch 将进行可视化。
+2025-12-10 10:46:58,521 - INFO - 正在生成预热 Batch 1 的可视化结果...
+2025-12-10 10:46:59,569 - INFO - 预热 Batch 1 可视化结果已保存至: vis_results/warmup_vis_batch_1.png
+2025-12-10 10:46:59,926 - INFO - 正在生成预热 Batch 2 的可视化结果...
+2025-12-10 10:47:00,860 - INFO - 预热 Batch 2 可视化结果已保存至: vis_results/warmup_vis_batch_2.png
+2025-12-10 10:47:00,860 - INFO - 预热进度: 2/5, Batch耗时: 1290.91ms
+2025-12-10 10:47:01,216 - INFO - 正在生成预热 Batch 3 的可视化结果...
+2025-12-10 10:47:02,128 - INFO - 预热 Batch 3 可视化结果已保存至: vis_results/warmup_vis_batch_3.png
+2025-12-10 10:47:02,485 - INFO - 预热进度: 4/5, Batch耗时: 355.59ms
+2025-12-10 10:47:02,846 - INFO - 预热进度: 5/5, Batch耗时: 356.48ms
+2025-12-10 10:47:23,162 - INFO - ONNX 推理完成 - 总耗时: 25.90s, 预热: 5.19s
+2025-12-10 10:47:23,162 - INFO - 正式推理耗时: 20.31s, 准确率: 84.14%, 吞吐量: 178.41 图片/秒
+2025-12-10 10:47:23,162 - INFO - 性能指标已保存到 onnx_inference_results_20251210_104723.json
+2025-12-11 08:00:03,328 - INFO - 数据集加载成功: 3923 张图片, 61 个batch
+2025-12-11 08:00:04,982 - INFO - ONNX 模型加载成功: /ascend-models/bench_04_swin_transformer/swin_base_patch4_window7_224.onnx
+2025-12-11 08:00:04,982 - INFO - 输入名称: input, 形状: [64, 3, 224, 224], 类型: tensor(float)
+2025-12-11 08:00:04,982 - INFO - 输出名称: output, 形状: [64, 1000], 类型: tensor(float)
+2025-12-11 08:00:04,982 - INFO - 开始 ONNX 推理...
+2025-12-11 08:02:27,960 - INFO - 数据集加载成功: 3923 张图片, 61 个batch
+2025-12-11 08:02:29,459 - INFO - ONNX 模型加载成功: /ascend-models/bench_04_swin_transformer/swin_base_patch4_window7_224.onnx
+2025-12-11 08:02:29,459 - INFO - 输入名称: input, 形状: [64, 3, 224, 224], 类型: tensor(float)
+2025-12-11 08:02:29,459 - INFO - 输出名称: output, 形状: [64, 1000], 类型: tensor(float)
+2025-12-11 08:02:29,459 - INFO - 开始 ONNX 推理...
+2025-12-11 08:16:51,254 - INFO - 数据集加载成功: 3923 张图片, 61 个batch
+2025-12-11 08:16:53,095 - INFO - ONNX 模型加载成功: /ascend-models/bench_04_swin_transformer/swin_base_patch4_window7_224.onnx
+2025-12-11 08:16:53,095 - INFO - 输入名称: input, 形状: [64, 3, 224, 224], 类型: tensor(float)
+2025-12-11 08:16:53,095 - INFO - 输出名称: output, 形状: [64, 1000], 类型: tensor(float)
+2025-12-11 08:16:53,095 - INFO - 开始 ONNX 推理...

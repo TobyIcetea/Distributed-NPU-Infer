@@ -1,0 +1,305 @@
+2025-12-11 09:18:25,861 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-11 09:18:25,861 - INFO - 类别总数: 1000
+2025-12-11 09:18:26,788 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-11 09:18:26,788 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-11 09:18:26,788 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-11 09:18:26,788 - INFO - 开始 ONNX 推理...
+2025-12-11 09:18:26,882 - INFO - 开始预热，共 5 个 Batch。前 3 个 Batch 将进行可视化。
+2025-12-11 09:18:27,321 - INFO - 正在生成预热 Batch 1 的可视化结果...
+2025-12-11 09:18:28,440 - INFO - 预热 Batch 1 可视化结果已保存至: vis_results/warmup_vis_batch_1.png
+2025-12-11 09:18:28,500 - INFO - 正在生成预热 Batch 2 的可视化结果...
+2025-12-11 09:18:29,466 - INFO - 预热 Batch 2 可视化结果已保存至: vis_results/warmup_vis_batch_2.png
+2025-12-11 09:18:29,466 - INFO - 预热进度: 2/5, Batch耗时: 1020.87ms
+2025-12-11 09:18:29,519 - INFO - 正在生成预热 Batch 3 的可视化结果...
+2025-12-11 09:18:30,533 - INFO - 预热 Batch 3 可视化结果已保存至: vis_results/warmup_vis_batch_3.png
+2025-12-11 09:18:30,587 - INFO - 预热进度: 4/5, Batch耗时: 53.98ms
+2025-12-11 09:18:30,639 - INFO - 预热进度: 5/5, Batch耗时: 48.70ms
+2025-12-11 09:18:33,982 - INFO - ONNX 推理完成 - 总耗时: 7.19s, 预热: 3.51s
+2025-12-11 09:18:33,982 - INFO - 正式推理耗时: 3.34s, 准确率: 75.68%, 吞吐量: 1193.26 图片/秒
+2025-12-11 09:18:33,982 - INFO - 性能指标已保存到 onnx_inference_results_20251211_091833.json
+2025-12-11 09:26:21,062 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-11 09:26:22,566 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-11 09:26:22,566 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-11 09:26:22,566 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-11 09:26:22,566 - INFO - 开始 ONNX 推理...
+2025-12-11 09:26:34,027 - INFO - ONNX 推理完成 - 总耗时: 11.46s, 预热: 0.38s, 正式: 3.72s
+2025-12-11 09:26:34,027 - INFO - 准确率: 76.29%, 吞吐量: 968.38 图片/秒
+2025-12-11 09:26:34,078 - INFO - 结果已保存到 onnx_inference_results.json
+2025-12-11 12:01:40,549 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-11 12:01:42,128 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-11 12:01:42,128 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-11 12:01:42,129 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-11 12:01:42,129 - INFO - 开始 ONNX 推理...
+2025-12-11 12:01:53,933 - INFO - ONNX 推理完成 - 总耗时: 11.80s, 预热: 0.44s, 正式: 3.80s
+2025-12-11 12:01:53,933 - INFO - 准确率: 76.29%, 吞吐量: 948.46 图片/秒
+2025-12-11 12:01:53,981 - INFO - 结果已保存到 onnx_inference_results.json
+2025-12-11 12:21:42,809 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-11 12:21:44,325 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-11 12:21:44,325 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-11 12:21:44,325 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-11 12:21:44,325 - INFO - 开始 ONNX 推理...
+2025-12-11 12:21:55,792 - INFO - ONNX 推理完成 - 总耗时: 11.47s, 预热: 0.40s, 正式: 3.71s
+2025-12-11 12:21:55,792 - INFO - 准确率: 76.29%, 吞吐量: 970.06 图片/秒
+2025-12-11 12:21:55,837 - INFO - 结果已保存到 onnx_inference_results.json
+2025-12-15 17:09:02,765 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 17:09:04,448 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 17:09:04,448 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 17:09:04,448 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 17:09:04,448 - INFO - 开始 ONNX 推理...
+2025-12-15 17:09:19,394 - INFO - ONNX 推理完成 - 总耗时: 14.95s, 预热: 0.47s, 正式: 5.04s
+2025-12-15 17:09:19,395 - INFO - 准确率: 76.29%, 吞吐量: 714.73 图片/秒
+2025-12-15 17:09:19,441 - INFO - 结果已保存到 onnx_inference_results.json
+2025-12-15 17:09:37,160 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 17:09:38,715 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 17:09:38,715 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 17:09:38,715 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 17:09:38,716 - INFO - 开始 ONNX 推理...
+2025-12-15 17:09:53,490 - INFO - ONNX 推理完成 - 总耗时: 14.77s, 预热: 0.43s, 正式: 4.76s
+2025-12-15 17:09:53,491 - INFO - 准确率: 76.29%, 吞吐量: 756.84 图片/秒
+2025-12-15 17:09:53,537 - INFO - 结果已保存到 onnx_inference_results.json
+2025-12-15 10:09:43,985 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:09:43,985 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:09:44,010 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:09:44,139 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:09:44,368 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:09:44,430 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:09:44,952 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:09:45,065 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:09:45,485 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:09:45,584 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:09:50,135 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:09:50,136 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:09:50,136 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:09:50,136 - INFO - 开始 ONNX 推理...
+2025-12-15 10:09:51,472 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:09:51,473 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:09:51,473 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:09:51,473 - INFO - 开始 ONNX 推理...
+2025-12-15 10:09:52,410 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:09:52,411 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:09:52,411 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:09:52,411 - INFO - 开始 ONNX 推理...
+2025-12-15 10:09:52,673 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:09:52,674 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:09:52,675 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:09:52,675 - INFO - 开始 ONNX 推理...
+2025-12-15 10:09:52,739 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:09:52,740 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:09:52,740 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:09:52,740 - INFO - 开始 ONNX 推理...
+2025-12-15 10:09:52,751 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:09:52,752 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:09:52,752 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:09:52,753 - INFO - 开始 ONNX 推理...
+2025-12-15 10:09:52,816 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:09:52,817 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:09:52,817 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:09:52,818 - INFO - 开始 ONNX 推理...
+2025-12-15 10:09:52,878 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:09:52,879 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:09:52,880 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:09:52,880 - INFO - 开始 ONNX 推理...
+2025-12-15 10:09:52,974 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:09:52,975 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:09:52,976 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:09:52,976 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:09:52,977 - INFO - 开始 ONNX 推理...
+2025-12-15 10:09:52,981 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:09:52,982 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:09:52,982 - INFO - 开始 ONNX 推理...
+2025-12-15 10:11:19,660 - INFO - ONNX 推理完成 - 总耗时: 89.52s, 预热: 1.84s, 正式: 31.59s
+2025-12-15 10:11:19,662 - INFO - 准确率: 76.29%, 吞吐量: 114.04 图片/秒
+2025-12-15 10:11:19,691 - INFO - ONNX 推理完成 - 总耗时: 86.94s, 预热: 1.53s, 正式: 31.66s
+2025-12-15 10:11:19,692 - INFO - 准确率: 76.29%, 吞吐量: 113.82 图片/秒
+2025-12-15 10:11:19,966 - INFO - 结果已保存到 onnx_inference_results.json
+2025-12-15 10:11:19,968 - INFO - 结果已保存到 onnx_inference_results.json
+2025-12-15 10:11:21,249 - INFO - ONNX 推理完成 - 总耗时: 88.57s, 预热: 1.37s, 正式: 27.54s
+2025-12-15 10:11:21,249 - INFO - 准确率: 76.29%, 吞吐量: 130.80 图片/秒
+2025-12-15 10:11:21,318 - INFO - 结果已保存到 onnx_inference_results.json
+2025-12-15 10:11:21,867 - INFO - ONNX 推理完成 - 总耗时: 88.99s, 预热: 1.44s, 正式: 31.79s
+2025-12-15 10:11:21,867 - INFO - 准确率: 76.29%, 吞吐量: 113.35 图片/秒
+2025-12-15 10:11:21,884 - INFO - ONNX 推理完成 - 总耗时: 88.91s, 预热: 1.26s, 正式: 32.40s
+2025-12-15 10:11:21,885 - INFO - 准确率: 76.29%, 吞吐量: 111.19 图片/秒
+2025-12-15 10:11:21,952 - INFO - 结果已保存到 onnx_inference_results.json
+2025-12-15 10:11:21,966 - INFO - 结果已保存到 onnx_inference_results.json
+2025-12-15 10:11:22,067 - INFO - ONNX 推理完成 - 总耗时: 89.25s, 预热: 1.34s, 正式: 28.08s
+2025-12-15 10:11:22,067 - INFO - 准确率: 76.29%, 吞吐量: 128.31 图片/秒
+2025-12-15 10:11:22,126 - INFO - 结果已保存到 onnx_inference_results.json
+2025-12-15 10:11:22,390 - INFO - ONNX 推理完成 - 总耗时: 89.41s, 预热: 1.07s, 正式: 26.26s
+2025-12-15 10:11:22,390 - INFO - 准确率: 76.29%, 吞吐量: 137.21 图片/秒
+2025-12-15 10:11:22,471 - INFO - 结果已保存到 onnx_inference_results.json
+2025-12-15 10:11:22,526 - INFO - ONNX 推理完成 - 总耗时: 89.78s, 预热: 1.65s, 正式: 31.09s
+2025-12-15 10:11:22,526 - INFO - 准确率: 76.29%, 吞吐量: 115.88 图片/秒
+2025-12-15 10:11:22,615 - INFO - 结果已保存到 onnx_inference_results.json
+2025-12-15 10:11:22,845 - INFO - ONNX 推理完成 - 总耗时: 90.43s, 预热: 1.19s, 正式: 22.47s
+2025-12-15 10:11:22,846 - INFO - 准确率: 76.29%, 吞吐量: 160.37 图片/秒
+2025-12-15 10:11:22,914 - INFO - 结果已保存到 onnx_inference_results.json
+2025-12-15 10:11:22,934 - INFO - ONNX 推理完成 - 总耗时: 91.46s, 预热: 1.18s, 正式: 24.36s
+2025-12-15 10:11:22,935 - INFO - 准确率: 76.29%, 吞吐量: 147.93 图片/秒
+2025-12-15 10:11:22,999 - INFO - 结果已保存到 onnx_inference_results.json
+2025-12-15 10:16:15,466 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:15,574 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:15,668 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:15,671 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:15,963 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:16,006 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:16,085 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:16,204 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:16,883 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:16,923 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:16,929 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:17,318 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:17,372 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:17,497 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:17,792 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:17,819 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:18,063 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:18,251 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:18,963 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:19,055 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:19,203 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:19,676 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:20,039 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:20,265 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:20,336 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:20,375 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:20,793 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:21,262 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:21,262 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:21,262 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:21,262 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:21,928 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:22,073 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:22,412 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:16:23,594 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:23,595 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:23,595 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:23,595 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:23,981 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:23,982 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:23,982 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:23,982 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:25,110 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:25,111 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:25,112 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:25,112 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:27,038 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:27,039 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:27,039 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:27,039 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:30,458 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:30,459 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:30,459 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:30,459 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:31,055 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:31,055 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:31,055 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:31,055 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:31,279 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:31,280 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:31,280 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:31,280 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:31,351 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:31,352 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:31,352 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:31,352 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:31,554 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:31,554 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:31,554 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:31,555 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:31,618 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:31,619 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:31,620 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:31,620 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:31,635 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:31,635 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:31,636 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:31,636 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:34,099 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:34,110 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:34,110 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:34,111 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:34,104 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:34,115 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:34,115 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:34,115 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:35,003 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:35,003 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:35,004 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:35,004 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:37,888 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:37,888 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:37,888 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:37,889 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:37,963 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:37,964 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:37,964 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:37,964 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:39,169 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:39,171 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:39,172 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:39,172 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:39,631 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:39,632 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:39,632 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:39,632 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:40,159 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:40,160 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:40,160 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:40,160 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:41,024 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:41,025 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:41,025 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:41,026 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:41,145 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:41,146 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:41,147 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:41,147 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:41,207 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:41,208 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:41,208 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:41,209 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:41,283 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:41,283 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:41,284 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:41,284 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:41,379 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:41,379 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:41,379 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:41,380 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:41,485 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:41,486 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:41,487 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:41,487 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:41,606 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:41,607 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:41,607 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:41,608 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:41,691 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:41,692 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:41,692 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:41,693 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:41,856 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:41,857 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:41,857 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:41,857 - INFO - 开始 ONNX 推理...
+2025-12-15 10:16:42,226 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:16:42,227 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:16:42,227 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:16:42,227 - INFO - 开始 ONNX 推理...
+2025-12-15 10:42:08,167 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:42:10,161 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:42:10,161 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:42:10,161 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:42:10,161 - INFO - 开始 ONNX 推理...
+2025-12-15 10:42:25,706 - INFO - ONNX 推理完成 - 总耗时: 15.54s, 预热: 0.43s, 正式: 5.19s
+2025-12-15 10:42:25,706 - INFO - 准确率: 76.29%, 吞吐量: 694.64 图片/秒
+2025-12-15 10:42:25,757 - INFO - 结果已保存到 onnx_inference_results.json
+2025-12-15 10:43:21,894 - INFO - 数据集加载成功: 3923 张图片, 62 个batch
+2025-12-15 10:43:23,857 - INFO - ONNX 模型加载成功: /ascend-models/bench_01_resnet/resnet50.onnx
+2025-12-15 10:43:23,857 - INFO - 输入名称: input, 形状: ['batch_size', 3, 224, 224], 类型: tensor(float)
+2025-12-15 10:43:23,857 - INFO - 输出名称: output, 形状: ['batch_size', 1000], 类型: tensor(float)
+2025-12-15 10:43:23,857 - INFO - 开始 ONNX 推理...
+2025-12-15 10:43:39,294 - INFO - ONNX 推理完成 - 总耗时: 15.44s, 预热: 0.47s, 正式: 4.79s
+2025-12-15 10:43:39,295 - INFO - 准确率: 76.29%, 吞吐量: 752.83 图片/秒
+2025-12-15 10:43:39,345 - INFO - 结果已保存到 onnx_inference_results.json

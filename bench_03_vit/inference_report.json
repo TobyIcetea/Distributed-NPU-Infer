@@ -1,0 +1,9 @@
+{
+    "model_name": "ViT-Base/16",
+    "model_flops_G": 17.6,
+    "accuracy_percent": 80.16,
+    "throughput_img_per_sec": 313.58,
+    "avg_power_watts": 66.7,
+    "actual_compute_tflops": 5.519,
+    "efficiency_gflops_per_watt": 82.74
+}

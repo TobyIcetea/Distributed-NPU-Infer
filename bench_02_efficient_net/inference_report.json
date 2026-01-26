@@ -1,0 +1,9 @@
+{
+    "model_name": "EfficientNet-B3",
+    "model_flops_G": 1.8,
+    "accuracy_percent": 80.61,
+    "throughput_img_per_sec": 413.86,
+    "avg_power_watts": 60.16,
+    "actual_compute_tflops": 0.745,
+    "efficiency_gflops_per_watt": 12.38
+}

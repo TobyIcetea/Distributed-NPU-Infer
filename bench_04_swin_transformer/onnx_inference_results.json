@@ -1,0 +1,17 @@
+{
+    "model_type": "ONNX",
+    "device_used": "NPU (CANN)",
+    "total_images": 3904,
+    "correct_predictions": 3308,
+    "accuracy": 84.73360655737704,
+    "total_inference_time": 46.84007811546326,
+    "warmup_batch_count": 5,
+    "warmup_time": 2.9359254837036133,
+    "formal_inference_time": 32.95383167266846,
+    "formal_batch_count": 56,
+    "formal_images_processed": 3584,
+    "throughput_images_per_sec": 108.7582177271522,
+    "avg_batch_time": 0.5874001894678388,
+    "avg_batch_size": 64.0,
+    "batch_count": 5
+}

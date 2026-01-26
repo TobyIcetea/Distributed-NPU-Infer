@@ -1,0 +1,9 @@
+{
+    "model_name": "ResNet50",
+    "model_flops_G": 8.2,
+    "accuracy_percent": 75.0,
+    "throughput_img_per_sec": 1175.53,
+    "avg_power_watts": 63.79,
+    "actual_compute_tflops": 9.6393,
+    "efficiency_gflops_per_watt": 151.12
+}

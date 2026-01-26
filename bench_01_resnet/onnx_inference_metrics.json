@@ -1,0 +1,12 @@
+{
+    "model_type": "ONNX",
+    "device_used": "NPU (CANN)",
+    "accuracy": 76.28073770491804,
+    "formal_inference_time": 3.0438075065612793,
+    "formal_images_processed": 3584,
+    "throughput_images_per_sec": 1177.4726201556023,
+    "model_flops_per_image_G": 8.2,
+    "average_power_W": 0.0,
+    "actual_computing_power_TFLOPS": 9.655275485275938,
+    "performance_per_watt_GFLOPS_W": 0.0
+}

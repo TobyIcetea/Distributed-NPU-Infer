@@ -18,3 +18,8 @@ segments/
 *.avi
 *.mkv
 npu-levels.json
+
+# Ascend
+kernel_meta
+result/
+

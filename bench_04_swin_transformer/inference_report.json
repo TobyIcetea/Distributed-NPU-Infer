@@ -1,0 +1,9 @@
+{
+    "model_name": "Swin-Base",
+    "model_flops_G": 15.4,
+    "accuracy_percent": 83.93,
+    "throughput_img_per_sec": 179.52,
+    "avg_power_watts": 73.22,
+    "actual_compute_tflops": 2.7646,
+    "efficiency_gflops_per_watt": 37.76
+}
