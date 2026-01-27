@@ -19,14 +19,17 @@ Omni-Infer-Ascend 是一个基于昇腾（Ascend）NPU 的推理项目集合，�
 ### 310B
 
 310B 设备主要是基于 Atlas 200I DK A2 完成的。
-
-<img src="./images/Atlas200IDKA2.png" alt="310B" width="30%" />
+<div align="center">
+  <img src="./images/Atlas200IDKA2.png" alt="310B" width="30%" />
+</div>
 
 ### 310P
 
 310P 设备主要是使用的香橙派 AI Studio 完成的。
 
-<img src="./images/OriginPiAIStudio.png" alt="310P" width="30%" />
+<div align="center">
+  <img src="./images/OriginPiAIStudio.png" alt="310P" width="30%" />
+</div>
 
 ## 推理结果展示
 
@@ -48,24 +51,33 @@ Omni-Infer-Ascend 是一个基于昇腾（Ascend）NPU 的推理项目集合，�
 ```
 
 分布式推理并合并：
-
-<img src="./images/yolov5-infer.png" alt="yolov5-infer" width="30%" />
+<div align="center">
+  <img src="./images/yolov5-infer.png" alt="yolov5-infer" width="30%" />
+</div>
 
 ### bench_01_resnet
 
-<img src="./bench_01_resnet/vis_results/warmup_vis_batch_1.png" alt="resnet-infer" width="30%" />
+<div align="center">
+  <img src="./bench_01_resnet/vis_results/warmup_vis_batch_1.png" alt="resnet-infer" width="30%" />
+</div>
 
 ### bench_02_efficient_net
 
-<img src="./bench_02_efficient_net/vis_results/warmup_vis_batch_1.png" alt="efficientnet-infer" width="30%" />
+<div align="center">
+  <img src="./bench_02_efficient_net/vis_results/warmup_vis_batch_1.png" alt="efficientnet-infer" width="30%" />
+</div>
 
 ### bench_03_vit
 
-<img src="./bench_03_vit/vis_results/warmup_vis_batch_1.png" alt="vit-infer" width="30%" />
+<div align="center">
+  <img src="./bench_03_vit/vis_results/warmup_vis_batch_1.png" alt="vit-infer" width="30%" />
+</div>
 
 ### bench_04_swin_transformer
 
-<img src="./bench_04_swin_transformer/vis_results/warmup_vis_batch_1.png" alt="swin-transformer-infer" width="30%" />
+<div align="center">
+  <img src="./bench_04_swin_transformer/vis_results/warmup_vis_batch_1.png" alt="swin-transformer-infer" width="30%" />
+</div>
 
 
 
